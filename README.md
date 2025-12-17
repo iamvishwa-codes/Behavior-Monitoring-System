@@ -53,6 +53,29 @@ Behavior-Monitoring-System/
 │       └── loitering/  
 
 ----
+## 🔽 Download YOLO Weights (Required)
+
+This project uses **YOLO (You Only Look Once)** for real-time person detection.
+
+Due to GitHub file size limits, **YOLO weight files are NOT included** in this repository.
+You must download them manually and place them in the correct folder.
+
+### ⬇️ Step 1: Download YOLO Weights
+
+Download the YOLOv3 weights from the official source:
+
+👉 https://pjreddie.com/media/files/yolov3.weights
+
+File size: ~248 MB
+
+### 📂 Step 2: Place the File
+
+After downloading:
+
+1. Create a folder named **`weights`** (if not already present)
+2. Move the downloaded file into it
+
+----
 
 ## ✨ Key Features
 
