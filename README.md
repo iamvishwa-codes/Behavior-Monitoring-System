@@ -1,19 +1,18 @@
 # 🛡️ Behavior Monitoring System (BMS)
 
-The **Behavior Monitoring System (BMS)** is a real-time security application built using **Python and Computer Vision**.  
-It automatically monitors people through a live camera and detects **restricted area entry** and **loitering behavior**.  
-When a violation happens, the system **captures screenshots** and **sends instant alerts**.
+Behavior Monitoring System (BMS) is a real-time computer vision–based security application developed using Python.  
+It detects people through a live camera feed and monitors their behavior to identify **restricted area entry** and **loitering**.  
+When a violation occurs, the system captures screenshots and sends instant alerts via Email and SMS.
 
 ---
 
-## 🔍 What This Project Does
+## 🎯 Project Objective
 
-- Detects people in real-time using a camera
-- Monitors **restricted areas**
-- Detects **loitering (standing too long in one place)**
-- Captures screenshots only when violations occur
-- Sends alerts using **Email and SMS**
-- Provides a web interface to view live camera and screenshots
+- Automatically monitor people using a camera
+- Detect unauthorized entry into restricted areas
+- Detect loitering based on time spent
+- Send real-time alerts
+- Store evidence screenshots securely
 
 ---
 
@@ -25,9 +24,63 @@ When a violation happens, the system **captures screenshots** and **sends instan
 - Flask
 - HTML & CSS
 - SMTP (Email)
-- Twilio (SMS)
+- Twilio API (SMS)
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
+
+Behavior-Monitoring-System/
+├── app.py  
+├── README.md  
+├── requirements.txt  
+├── templates/  
+│   ├── index.html  
+│   ├── screenshots_login.html  
+│   └── gallery.html  
+├── static/  
+│   └── screenshots/  
+│       ├── restricted/  
+│       └── loitering/  
+
+---
+
+## ⚙️ How to Run the Project
+
+### Step 1: Clone Repository
+```bash
+git clone https://github.com/iamvishwa-codes/Behavior-Monitoring-System.git
+cd Behavior-Monitoring-System
+
+## 🔄 Working Process
+
+- Camera captures live video  
+- Person is detected using a deep learning model  
+- Each person is tracked with a unique ID  
+- System continuously checks:
+  - Restricted area entry  
+  - Loitering duration  
+- On violation:
+  - Screenshot is captured  
+  - Email or SMS alert is sent  
+  - Incident is stored for review  
+
+---
+
+## ✨ Key Features
+
+- Real-time monitoring  
+- Accurate person detection  
+- Loitering detection using time threshold  
+- Password-protected evidence gallery  
+- Smart storage (avoids duplicate screenshots)  
+- Instant alert system  
+
+---
+
+## 👤 Author
+
+**Vishwa K**  
+GitHub: https://github.com/iamvishwa-codes
+
 
