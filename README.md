@@ -1,30 +1,39 @@
-# 🛡️ Behavior Monitoring System (BMS)
+# 🚨 Behavior Monitoring System (BMS)
 
-Behavior Monitoring System (BMS) is a real-time computer vision–based security application developed using Python.  
-It detects people through a live camera feed and monitors their behavior to identify **restricted area entry** and **loitering**.  
-When a violation occurs, the system captures screenshots and sends instant alerts via Email and SMS.
+A real-time **Computer Vision–based security system** that detects **restricted area entry** and **loitering behavior** using deep learning and sends **instant alerts via SMS or Email**.
 
 ---
 
-## 🎯 Project Objective
+## 📌 Project Overview
 
-- Automatically monitor people using a camera
-- Detect unauthorized entry into restricted areas
-- Detect loitering based on time spent
-- Send real-time alerts
-- Store evidence screenshots securely
+The Behavior Monitoring System (BMS) is designed to automate surveillance by analyzing live camera feeds.  
+Instead of relying on manual CCTV monitoring, this system intelligently detects people, tracks their movement, identifies suspicious behavior, and alerts authorities in real time.
 
 ---
 
-## 🧠 Technologies Used
+## 🎯 Objectives
 
-- Python 3
-- OpenCV
-- YOLO / MobileNet-SSD
-- Flask
-- HTML & CSS
-- SMTP (Email)
-- Twilio API (SMS)
+- Detect people in live video streams  
+- Monitor restricted zones automatically  
+- Identify loitering behavior using time thresholds  
+- Capture evidence screenshots  
+- Send instant Email/SMS alerts  
+- Store incidents securely for review  
+
+---
+
+## 🔄 Working Process
+
+- Camera captures live video  
+- Person is detected using a deep learning model (YOLO / MobileNet-SSD)  
+- Each person is tracked with a unique ID  
+- System continuously checks:
+  - Restricted area entry  
+  - Loitering duration  
+- On violation:
+  - Screenshot is captured  
+  - Email or SMS alert is sent  
+  - Incident is stored for review  
 
 ---
 
@@ -43,44 +52,51 @@ Behavior-Monitoring-System/
 │       ├── restricted/  
 │       └── loitering/  
 
----
-
-## ⚙️ How to Run the Project
-
-### Step 1: Clone Repository
-```bash
-git clone https://github.com/iamvishwa-codes/Behavior-Monitoring-System.git
-cd Behavior-Monitoring-System
-
-## 🔄 Working Process
-
-- Camera captures live video  
-- Person is detected using a deep learning model  
-- Each person is tracked with a unique ID  
-- System continuously checks:
-  - Restricted area entry  
-  - Loitering duration  
-- On violation:
-  - Screenshot is captured  
-  - Email or SMS alert is sent  
-  - Incident is stored for review  
-
----
+----
 
 ## ✨ Key Features
 
 - Real-time monitoring  
 - Accurate person detection  
 - Loitering detection using time threshold  
-- Password-protected evidence gallery  
+- Restricted area monitoring  
+- Password-protected screenshot gallery  
 - Smart storage (avoids duplicate screenshots)  
-- Instant alert system  
+- Instant Email & SMS alert system  
+- Low latency and efficient processing  
 
 ---
 
-## 👤 Author
+## 🛠️ Technologies Used
 
-**Vishwa K**  
-GitHub: https://github.com/iamvishwa-codes
+- **Python 3.x**
+- **OpenCV** – Video processing & DNN
+- **YOLO / MobileNet-SSD** – Person detection
+- **NumPy** – Numerical operations
+- **Flask** – Web interface
+- **Twilio API** – SMS alerts
+- **SMTP (Gmail)** – Email alerts
 
+---
 
+## 🖥️ System Requirements
+
+### Hardware
+- Webcam or CCTV camera  
+- Minimum 8GB RAM  
+- Dual-core or higher CPU  
+
+### Software
+- Python 3.8+
+- OpenCV
+- Flask
+- NumPy
+- Twilio library
+
+---
+
+## 🚀 How to Run the Project
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/iamvishwa-codes/Behavior-Monitoring-System.git
